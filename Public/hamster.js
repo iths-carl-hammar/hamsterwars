@@ -14,4 +14,6 @@ router.get('/', async (req, res)=>{
 
 })
 
+router.collection('hamsters').where('id', '==',req.params.id).get();
+
 module.exports = router;
