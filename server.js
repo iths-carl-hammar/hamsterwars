@@ -1,14 +1,12 @@
-// 
 const express = require('express');
 
+const { auth } = require('../firebase');
 
 const app = express();
 
-
-app.use(express.static(__dirname + '/Public'))
-// alla post.body
+// alla post.body = json
 app.use(express.json());
 
-
-
-app.listen(3001);
+app.listen(3001), ()=>{
+    console.log('Server up');
+}
