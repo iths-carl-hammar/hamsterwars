@@ -1,6 +1,6 @@
 const express = require('express');
 
-const { auth } = require('../firebase');
+//const { auth } = require('../firebase');
 
 const app = express();
 
