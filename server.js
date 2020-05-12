@@ -11,6 +11,13 @@ app.use(bodyParser.json());
 // alla post.body = json
 app.use(express.json());
 
+app.get('./assets/hamsters',(req,res)=>{
+    console.log(req.query)
+
+    res.send("getting root");
+})
+
+
 // initalize routes 
 //app.use('/router', require('./Public/router'));
 

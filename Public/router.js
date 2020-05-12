@@ -5,6 +5,10 @@ const router = express.Router();
 
 // 
 
+router.get('/games/assets/hamsters',(req, res)=>{
+    
+})
+
 
 
 router.get('/post', (req,res)=>{
