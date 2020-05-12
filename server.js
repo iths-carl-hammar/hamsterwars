@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+// min data.json file med alla objekt finns i firebase
 
 //const { auth } = require('../firebase');
 // set up express app 
