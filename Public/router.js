@@ -7,10 +7,35 @@ const router = express.Router();
 
 
 
-router.get('/games', (req,res)=>{
+router.get('/post', (req,res)=>{
 
-    const name = req.query.name
-    res.json(games)
+    const name = parseInt(req.query.name)
+    const wins = parseInt(req.query.wins)
+
+    
+   
+
+    const startIndex = (name - 1) * wins
+    const endIndex = name * wins 
+
+    const results = {}
+
+    results.next = {
+        name: name + 1,
+        wins: wins
+    }
+
+    results.previous = {
+        name: name - 1,
+        wins:wins
+    }
+
+    results = name.slice(startIndex , endIndex)
+    res.json(results)
+
+
+
+
 
     console.log(req.body);
 
