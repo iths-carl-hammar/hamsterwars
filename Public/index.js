@@ -74,4 +74,16 @@ db.collection('hamsters').get().then(snapshop =>{
    
 })
 
+exports.uploadFile = functions.https.onRequest((req,res)=>{
+    if(req.method !== 'POST'){
+        return res.status(500).json({
+            message: 'Not Allowed'
+        });
+    }
+    res.status(200).json({
+        message: 'It worked'
+    });
+
+});
+
 
