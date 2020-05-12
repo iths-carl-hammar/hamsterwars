@@ -1,6 +1,12 @@
 const express = require('express');
 
-const games = {
-    Total: 35,
-    winner: "Sixten"
+
+ let   gamedata = {
+     id: Number,
+    timeStamp: Date,
+    contestants: [
+        { hamsterobject },
+        { hamsterobject }
+    ],
+    winner: { hamsterobject }
 }

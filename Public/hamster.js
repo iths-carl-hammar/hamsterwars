@@ -17,6 +17,7 @@ router.get('/', async (req, res)=>{
 router.put('/:id/result',async (req, res)=>{
   let snapShot = await db.collection('hamsters').where('id', "==", req.params.id).get();
     console.log(snapShot);
+  
 })
 
 router.collection('hamsters').where('id', '==',req.params.id).get();
