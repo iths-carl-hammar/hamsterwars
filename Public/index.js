@@ -6,6 +6,7 @@ const firestore = admin.firestore();
 const path = require('path');
 const fs = require('fs');
 const directoryPath = path.join(__dirname, 'hamsters')
+// bilder på Hamster finns storage i firebase .
 
 fs.readdir(directoryPath, function(err, hamsters ){
    if(err) {
