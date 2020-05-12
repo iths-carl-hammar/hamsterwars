@@ -11,11 +11,12 @@ app.use(bodyParser.json());
 // alla post.body = json
 app.use(express.json());
 
-app.get('./assets/hamsters',(req,res)=>{
+app.get('./:id',(req,res)=>{
     console.log(req.query)
     console.log(req.body)
+    console.log(req.params)
 
-    res.send("getting root");
+    res.status(404).send("getting root");
 })
 
 
