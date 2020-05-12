@@ -20,15 +20,22 @@ router.get('/post', (req,res)=>{
 
     const results = {}
 
-    results.next = {
-        name: name + 1,
-        wins: wins
-    }
 
-    results.previous = {
-        name: name - 1,
-        wins:wins
+     if(endIndex < hamsters.length){
+        results.next = {
+            name: name + 1,
+            wins: wins
+        }
+     }
+   
+     
+    if(startIndex > 0){
+        results.previous = {
+            name: name - 1,
+            wins:wins
+        }
     }
+    
 
     results = name.slice(startIndex , endIndex)
     res.json(results)
@@ -48,5 +55,5 @@ router.get('/stats', (req, res)=>{
 });
 
 router.get('/chart', (req, res)=>{
-
+    console.log(req.body);
 })
