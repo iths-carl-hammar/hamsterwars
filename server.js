@@ -13,6 +13,7 @@ app.use(express.json());
 
 app.get('./assets/hamsters',(req,res)=>{
     console.log(req.query)
+    console.log(req.body)
 
     res.send("getting root");
 })
