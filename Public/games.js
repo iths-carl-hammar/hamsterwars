@@ -14,7 +14,7 @@ const {Router} = require('express');
 }
 
 router.post('/', async(req, res)=>{
-    const doc = await db.collection('spel').doc();
+    const doc = await db.collection('games').doc();
 
     await doc.set({
         id:doc.id,
