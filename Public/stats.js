@@ -10,3 +10,12 @@ const stats = {
 
 }
 
+app.get('/',(req,res)=>{
+   
+ 
+    console.log(req.params)
+
+    res.status(404).send("not found");
+})
+
+

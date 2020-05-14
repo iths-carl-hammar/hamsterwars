@@ -11,12 +11,12 @@ app.use(bodyParser.json());
 // alla post.body = json
 app.use(express.json());
 
-app.get('./:id',(req,res)=>{
+app.get('/:id',(req,res)=>{
     console.log(req.query)
     console.log(req.body)
     console.log(req.params)
 
-    res.status(404).send("getting root");
+    res.status(404).send("not found");
 })
 
 
