@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+.App-link{
+  color: aqua;
+}
+
+.App-header {
+  background-color: #b3bbce;
+  
+}
+ul {
+  display: flex;
+  flex-direction: row;
+}
+li {
+  width: 200px;
+  list-style-type:none;
+  border:1px solid gray;
+  padding: 5px;
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+a:hover{
+  cursor: pointer;
+}
+a:visited{
+  color: brown;
+}
