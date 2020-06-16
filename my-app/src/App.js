@@ -55,7 +55,7 @@ function App() {
 }
 
 async function getBild(){
-  let baseUrl = '/';
+  let baseUrl = './bild';
  const response = await fetch('/');
 
  const hamsterArray = await response.json();
