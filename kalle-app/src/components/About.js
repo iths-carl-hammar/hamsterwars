@@ -1,14 +1,22 @@
-import react, { useState } from 'react';
+import react, { useState,useEffect } from 'react';
+import axios from 'axios';
 
 
 const About = ()=>{
-    const [] = useState();
+    const [resouces, setResources] = useState([]);
 
-    const fetch
+    const fetchResource = async ()=>{
+        const response = await axios.get(
+            ``
+        );
+        
+
+
+    }
 
      return(
          <div>
-
+              {}
          </div>
      )
     
