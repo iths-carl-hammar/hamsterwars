@@ -1,7 +1,6 @@
 const hamsters = require('../data.json');
-const {db} = require('../firebase');
 
-const admin = require('firebase-admin');
+
 const firestore = admin.firestore();
 const path = require('path');
 const fs = require('fs');
