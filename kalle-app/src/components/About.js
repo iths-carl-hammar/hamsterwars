@@ -12,11 +12,15 @@ const About = ()=>{
         
 
 
-    }
+    };
+
+    useEffect(()=>{
+           fetchResource(resouces);
+    },[])
 
      return(
          <div>
-              {}
+              {resouces.length}
          </div>
      )
     
