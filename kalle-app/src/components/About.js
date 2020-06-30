@@ -5,10 +5,12 @@ import axios from 'axios';
 const About = ()=>{
     const [resouces, setResources] = useState([]);
 
-    const fetchResource = async ()=>{
+    const fetchResource = async (resouces)=>{
         const response = await axios.get(
-            ``
+            `https://jsonplaceholder.typecode.com/${resouces}`
         );
+
+        setResources(response.data);
         
 
 
