@@ -1,18 +1,26 @@
-import React from 'react';
+import React,  {useState, useEffect} from 'react';
+import Header from './components/Header';
+import axios from 'react';
 
 
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Post Test</h1>
-      
-        <button className=""  >Button1</button>
-        <button className="" >Button2</button>
+const App = () => {
+  const [items ,setItems] = useState([]);
+  const [isLoading, setIsLoading ]  = useState(true);
 
-        
-        
+  useEffect(()=>{
+    const fetchItems =  async () => {
+        const result = await axios(`https://www.breakingbadapi.com/api/`)
+
+    }
+
+  })
+
+  return (
+    <div className="container">
+
+      <Header></Header>
     </div>
   );
 }
